@@ -245,6 +245,10 @@ export const StyledHeader = styled.header`
         width: 330px;
       }
     }
+
+    .modal-content{
+        width: 350px;
+    }
   }
 `;
 
