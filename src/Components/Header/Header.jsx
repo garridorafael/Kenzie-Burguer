@@ -152,10 +152,10 @@ export function Header({
                           <button onClick={() => increaseQuantity(product.id)}>
                             +
                           </button>
-                        </div>
-                        <button onClick={() => {handleRemoveItem(product.id); decreaseQuantity(product.id);}}>
+                        <button className="buttonRemove" onClick={() => {handleRemoveItem(product.id); decreaseQuantity(product.id);}}>
                           <img src={trash} alt="Remover" />
                         </button>
+                        </div>
                       </div>
                     </li>
                   ))}

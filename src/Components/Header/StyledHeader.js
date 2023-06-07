@@ -111,16 +111,27 @@ export const StyledHeader = styled.header`
         justify-content: space-between;
         margin-left: 12px;
 
+        span{
+            padding: 0 8px;
+        }
+
         h4 {
           font-size: 1.125rem;
           font-weight: 700;
         }
 
-        button {
+        button{
+            border: none;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .buttonRemove {
           border: none;
           background: none;
           width: 12px;
           height: 14px;
+          margin-left: 30px;
 
           &:hover {
             cursor: pointer;
