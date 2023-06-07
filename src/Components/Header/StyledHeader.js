@@ -79,6 +79,7 @@ export const StyledHeader = styled.header`
     border: 1px solid #888;
     border-radius: 8px;
     width: 500px;
+    
 
     ul {
       overflow-y: auto;
@@ -159,6 +160,8 @@ export const StyledHeader = styled.header`
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    border-radius: 7px 7px 0px 0px;
+
     h3 {
       color: var(--color-grey-200);
     }
