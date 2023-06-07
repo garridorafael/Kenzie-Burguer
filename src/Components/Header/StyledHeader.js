@@ -133,6 +133,7 @@ export const StyledHeader = styled.header`
           width: 12px;
           height: 14px;
           margin-left: 30px;
+          margin-right: 5px;
 
           &:hover {
             cursor: pointer;

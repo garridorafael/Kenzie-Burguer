@@ -108,7 +108,7 @@ export function Header({
             </span>
             <StyledCart src={cart} alt="imagem de um carrinho de compras" />
           </div>
-          <div className="inputContainer">
+          <form className="inputContainer" onSubmit={handleSubmit}>
             <input
               type="search"
               name="search"
@@ -120,7 +120,7 @@ export function Header({
             <button type="submit">
               <img src={lupa} alt="buscar" />
             </button>
-          </div>
+          </form>
         </div>
       </StyledContainerHeader>
       {isCartOpen && (
