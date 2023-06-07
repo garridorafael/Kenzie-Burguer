@@ -101,23 +101,25 @@ export function Header({
         <div className="cartContainer">
           <div className="cart" onClick={handleCartClick}>
             <span>
-              {Object.values(itemQuantities).reduce((total, quantity) => total + quantity, 0) || 0}
+              {Object.values(itemQuantities).reduce(
+                (total, quantity) => total + quantity,
+                0
+              ) || 0}
             </span>
             <StyledCart src={cart} alt="imagem de um carrinho de compras" />
           </div>
           <div className="inputContainer">
-
-          <input
-            type="search"
-            name="search"
-            id="search"
-            placeholder="Digitar pesquisa"
-            value={inputSearch}
-            onChange={handleInputChange}
-          />
-          <button type="submit">
-            <img src={lupa} alt="buscar" />
-          </button>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Digitar pesquisa"
+              value={inputSearch}
+              onChange={handleInputChange}
+            />
+            <button type="submit">
+              <img src={lupa} alt="buscar" />
+            </button>
           </div>
         </div>
       </StyledContainerHeader>
@@ -152,9 +154,15 @@ export function Header({
                           <button onClick={() => increaseQuantity(product.id)}>
                             +
                           </button>
-                        <button className="buttonRemove" onClick={() => {handleRemoveItem(product.id); decreaseQuantity(product.id);}}>
-                          <img src={trash} alt="Remover" />
-                        </button>
+                          <button
+                            className="buttonRemove"
+                            onClick={() => {
+                              handleRemoveItem(product.id);
+                              decreaseQuantity(product.id);
+                            }}
+                          >
+                            <img src={trash} alt="Remover" />
+                          </button>
                         </div>
                       </div>
                     </li>
@@ -178,7 +186,13 @@ export function Header({
                     })}
                 </span>
               </div>
-              <button className="removeButton" onClick={() => { handleRemoveAllItems(); removeAllItems(); }}>
+              <button
+                className="removeButton"
+                onClick={() => {
+                  handleRemoveAllItems();
+                  removeAllItems();
+                }}
+              >
                 Remover todos
               </button>
             </footer>

@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components"
-import styled from "styled-components"
+import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -51,7 +51,7 @@ body{
     background-color: white;
 }
 
-`
+`;
 export const StyledContainer = styled.div`
   margin: 0 auto;
   width: 100%;
@@ -61,8 +61,4 @@ export const StyledContainer = styled.div`
   flex-wrap: wrap;
   flex: 1;
   flex-direction: row;
-`
-
-
-
-
+`;

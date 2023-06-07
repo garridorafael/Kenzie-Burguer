@@ -16,8 +16,8 @@ export const StyledHeader = styled.header`
     position: relative;
     width: 390px;
 
-    input{
-        width: 365px;
+    input {
+      width: 365px;
     }
 
     button {
@@ -37,7 +37,7 @@ export const StyledHeader = styled.header`
     }
   }
 
-  .inputContainer{
+  .inputContainer {
     position: relative;
   }
 
@@ -111,8 +111,8 @@ export const StyledHeader = styled.header`
         justify-content: space-between;
         margin-left: 12px;
 
-        span{
-            padding: 0 8px;
+        span {
+          padding: 0 8px;
         }
 
         h4 {
@@ -120,10 +120,10 @@ export const StyledHeader = styled.header`
           font-weight: 700;
         }
 
-        button{
-            border: none;
-            padding: 2px 6px;
-            border-radius: 3px;
+        button {
+          border: none;
+          padding: 2px 6px;
+          border-radius: 3px;
         }
 
         .buttonRemove {
@@ -226,24 +226,24 @@ export const StyledHeader = styled.header`
   @media (max-width: 582px) {
     height: 105px;
 
-    .cart{
-        position: absolute;
-        top: -30px;
-        right: -3px;
+    .cart {
+      position: absolute;
+      top: -30px;
+      right: -3px;
     }
 
-    .cartContainer{
-        margin-left: 5%;
+    .cartContainer {
+      margin-left: 5%;
 
-        button{
-            right: 6px;
-        }
+      button {
+        right: 6px;
+      }
     }
 
-    .inputContainer{
-        input{
-            width: 330px;
-        }
+    .inputContainer {
+      input {
+        width: 330px;
+      }
     }
   }
 `;

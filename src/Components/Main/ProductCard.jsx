@@ -1,7 +1,6 @@
 import { CardProduct } from "./StyledCard";
 
 export function Card({ product, addToCart }) {
-  
   return (
     <CardProduct id={product.id}>
       <div className="cardImage">

@@ -9,17 +9,17 @@ export const CardProduct = styled.li`
   border: 2px solid var(--color-grey-100);
   border-radius: 5px;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
     border: 2px solid var(--color-color-primary);
 
-    .addButton{
-        background-color: var(--color-color-primary);
-        border: 2px solid var(--color-color-primary);
+    .addButton {
+      background-color: var(--color-color-primary);
+      border: 2px solid var(--color-color-primary);
     }
 
-    img{
-        transform: scale(1.1);
+    img {
+      transform: scale(1.1);
     }
   }
 
@@ -59,7 +59,7 @@ export const CardProduct = styled.li`
       font-weight: 600;
       font-size: 0.875rem;
 
-      &:hover{
+      &:hover {
         cursor: pointer;
         background-color: var(--color-primary-2);
         border: 2px solid var(--color-primary-2);
