@@ -101,6 +101,7 @@ export const StyledHeader = styled.header`
         font-weight: 700;
         font-size: 18px;
         display: flex;
+        text-align: center;
         align-items: center;
         justify-content: center;
         height: 200px;
