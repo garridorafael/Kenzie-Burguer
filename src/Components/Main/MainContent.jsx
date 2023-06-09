@@ -30,8 +30,10 @@ export function Main() {
   };
 
   const filteredProducts = productsList.filter((product) =>
-    product.name.toUpperCase().includes(inputSearch.toUpperCase())
-  );
+  product.name.toUpperCase().includes(inputSearch.toUpperCase()) ||
+  product.category.toUpperCase().includes(inputSearch.toUpperCase())
+);
+
 
   const handleForm = (inputSearch) => {
     setInputSearch(inputSearch);
