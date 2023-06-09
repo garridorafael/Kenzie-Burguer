@@ -126,6 +126,13 @@ export const StyledHeader = styled.header`
           border: none;
           padding: 2px 6px;
           border-radius: 3px;
+          height: 18px;
+        }
+
+        div{
+          width: 90px;
+          display: flex;
+          box-sizing: content-box;
         }
 
         .buttonRemove {
@@ -133,7 +140,7 @@ export const StyledHeader = styled.header`
           background: none;
           width: 12px;
           height: 14px;
-          margin-left: 30px;
+          margin-left: clamp(0px, 10%, 30px);
           margin-right: 5px;
 
           &:hover {
