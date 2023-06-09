@@ -1,3 +1,4 @@
+import { StyledButton } from "../Button/StyledButton";
 import { CardProduct } from "./StyledCard";
 
 export function Card({ product, addToCart }) {
@@ -16,9 +17,11 @@ export function Card({ product, addToCart }) {
               currency: "BRL",
             }).format(product.price)}
         </p>
-        <button className="addButton" onClick={() => addToCart(product)}>
-          Adicionar
-        </button>
+        <StyledButton
+          text="Adicionar"
+          className="addButton"
+          onClick={() => addToCart(product)}
+        />
       </div>
     </CardProduct>
   );

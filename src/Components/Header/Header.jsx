@@ -8,6 +8,7 @@ import cart from "../../assets/images/cart.svg";
 import { Logo } from "./Logo";
 import lupa from "../../assets/images/lupa.png";
 import trash from "../../assets/images/trash.png";
+import { StyledButton } from "../Button/StyledButton";
 
 export function Header({
   callback,
@@ -117,9 +118,8 @@ export function Header({
               value={inputSearch}
               onChange={handleInputChange}
             />
-            <button type="submit">
-              <img src={lupa} alt="buscar" />
-            </button>
+            <StyledButton text={<img src={lupa} alt="buscar" />} type="submit" />
+
           </form>
         </div>
       </StyledContainerHeader>
@@ -151,8 +151,8 @@ export function Header({
                             -
                           </button>
                           <span>{itemQuantities[product.id]}</span>
-                          <button onClick={() => increaseQuantity(product.id)}>
-                            +
+                          <button onClick={() => increaseQuantity(product.id)}>   
+                            +                        
                           </button>
                           <button
                             className="buttonRemove"
